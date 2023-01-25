@@ -65,7 +65,6 @@ hr{
 }
 .blog .thumbnail img{
     width: 177px;
-    height: 117px;
 }
 .blog-info{
     margin-left: 16px;
@@ -116,20 +115,32 @@ hr{
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+    .section-title{
+        text-align: center;
     }
     .players, .blogs, .courses{
         
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+        gap: 20px;
     }
     .player, .blog, .course{
         flex-direction: column;
+        text-align: center;
     }
 }
 /* ====================================================================== Reasponsive for Tablet */
 @media  screen and (min-width:689px) and (max-width:992px) {
     .container{
         width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+    .section-title{
+        text-align: center;
     }
     .players, .blogs, .courses{
         
@@ -139,6 +150,6 @@ hr{
     .player, .blog, .course{
         flex-direction: column;
         margin-bottom: 10px;
-        
+        text-align: center;
     }
 }
